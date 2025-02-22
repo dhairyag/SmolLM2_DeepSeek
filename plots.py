@@ -72,6 +72,12 @@ def load_metrics_from_checkpoints():
 def create_plots():
     """Create and save training metric plots"""
     metrics = load_metrics_from_checkpoints()
+    # print metrics
+    #print(metrics)
+    # remove last loss value
+    metrics['loss'] = metrics['loss'][:-1]
+    metrics['steps'] = metrics['steps'][:-1]
+    metrics['unique_content'] = metrics['unique_content'][:-1]
     
     # Set bigger font sizes globally
     plt.rcParams.update({'font.size': 14})
