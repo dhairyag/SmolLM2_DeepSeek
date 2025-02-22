@@ -18,7 +18,7 @@ Following parameters are used to make the model smaller (254.8M parameters) and 
 
 ## Loss and Unique Content Plot
 The loss and unique content plot is generated using the `plots.py` script shown below:
-![Loss and Unique Content Plot](training_loss_and_unique_content.png)
+![Loss and Unique Content Plot](training_metrics.png)
 
 ## Architecture Overview
 
